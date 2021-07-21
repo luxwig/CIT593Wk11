@@ -19,7 +19,7 @@ void q1(void)
            strcat(str1,    "World!"));  // Hello World!
 
    printf("version 2: %s\n",  
-           strcat("Hello", "World!"));  // SEGFAULT; 
+           strcat("Hello", "World!"));  // Hello World!
 }
 
 /// ***************** Q2 ****************

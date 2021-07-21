@@ -14,7 +14,7 @@
 void print_fruit(int len, char (*f)[MAXLEN])
 {
     for (int i = 0; i < len; i++)
-        printf("%s ", f[i]);
+        printf("%s\t", f[i]);
     printf("\n");
 }
 
@@ -23,6 +23,7 @@ int main(void)
     char fruits[NUM][MAXLEN] = {"Apple","Grape","Orange","Banana","Lemon"};
 
     // STRLEN
+    // size_t strlen(const char *str)
     printf("\n>>>> STRLEN <<<<\n");
     for (int i = 0; i < NUM; i++) 
         printf("%s - %lu\n", fruits[i], strlen(fruits[i]));
@@ -30,6 +31,7 @@ int main(void)
 	getchar();
 	
     // STRCPY
+    // char *strcpy(char *dest, const char *src)
     printf("\n>>>> STRCPY <<<<\n");
     print_fruit(NUM, fruits);
     strcpy(fruits[0], "Lime");
@@ -38,13 +40,15 @@ int main(void)
 	getchar();
 	
     // STRCHR
+    // char *strchr(const char *str, int c)
     char* index; 
     printf("\n>>>> STRCHR <<<<\n");
     for (int i = 0; i < NUM; i++)
     {
         index = strchr(fruits[i], 'e');
         if (index)  // Equivalent to index != NULL
-            printf("``%s'' \thas an ``e'' at position %ld\n", fruits[i], index-fruits[i]+1);
+            printf("``%s'' \thas an ``e'' at position %ld\n", 
+                   fruits[i], index-fruits[i]+1);
         else
             printf("``%s'' \tdoes not have an ``e''\n", fruits[i]);
     } 
@@ -52,6 +56,7 @@ int main(void)
 	getchar();
 	
     // STRCMP
+    // int strcmp(const char *str1, const char *str2)
     printf("\n>>>> STRCMP <<<<\n");
     int result;
     for (int i = 0; i < NUM; i++)
@@ -68,6 +73,7 @@ int main(void)
 	getchar();
 	
     // STRCAT
+    // char *strcat(char *dest, const char *src)
     printf("\n>>>> STRCAT <<<<\n");
     print_fruit(NUM, fruits);
     strcat(fruits[0], "s");
