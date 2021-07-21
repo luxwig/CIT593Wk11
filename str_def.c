@@ -1,3 +1,10 @@
+/*************************************************************************/
+/* File Name : str_def.c 		    							         */
+/* Purpose   : CIT 593 Week 11 Recitation                                */
+/*             demonstration for c-string declaration and initiation.    */
+/* Author(s) : Ludwig Zhao 		 									     */
+/*************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 

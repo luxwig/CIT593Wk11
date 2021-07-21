@@ -1,3 +1,10 @@
+/*************************************************************************/
+/* File Name : quiz.c 		    									     */
+/* Purpose   : CIT 593 Week 11 Recitation                                */
+/*             some challenging questions and common mistakes.           */
+/* Author(s) : Ludwig Zhao 		 									     */
+/*************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #define NUM    5

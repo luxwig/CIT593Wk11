@@ -1,3 +1,10 @@
+/*************************************************************************/
+/* File Name : example.c 											     */
+/* Purpose   : CIT 593 Week 11 Recitation                                */
+/*             demonstration for common c-string library functions.      */
+/* Author(s) : Ludwig Zhao 		 									     */
+/*************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #define NUM    5
@@ -59,6 +66,7 @@ int main(void)
     }
 	
 	getchar();
+	
     // STRCAT
     printf("\n>>>> STRCAT <<<<\n");
     print_fruit(NUM, fruits);

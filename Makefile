@@ -1,3 +1,10 @@
+###########################################################################
+## File Name : Makeile 		    									     ##
+## Purpose   : CIT 593 Week 11 Recitation                                ##
+##             Makefile 		    									 ##
+## Author(s) : Ludwig Zhao 		 									     ##
+###########################################################################
+
 CC = clang
 CFLAGS = -Wall -ggdb
 INCLUDES =
@@ -9,9 +16,6 @@ MAINS = str_def example quiz
 all:    $(MAINS)
 
 $(MAINS): $(MAIN=$@)
-
-#$(MAIN):  $(MAINS).o
-#	$(CC) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(MAINS).o $(LFLAGS) $(LIBS)
 
 .c.o: 
 	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
